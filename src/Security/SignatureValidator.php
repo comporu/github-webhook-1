@@ -50,7 +50,7 @@ class SignatureValidator implements SignatureValidatorInterface
             return false;
         }
 
-        $signature = current($signature);
+        //$signature = current($signature);
 
         $explodeResult = explode('=', $signature, 2);
 
