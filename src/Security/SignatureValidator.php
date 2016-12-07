@@ -49,8 +49,9 @@ class SignatureValidator implements SignatureValidatorInterface
         if (empty($signature)) {
             return false;
         }
-
-        //$signature = current($signature);
+        
+        reset($signature);
+        $signature = current($signature);
 
         $explodeResult = explode('=', $signature, 2);
 
